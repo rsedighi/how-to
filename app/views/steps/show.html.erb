@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @step.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @step.description %>
+</p>
+
+<p>
+  <strong>List:</strong>
+  <%= @step.list_id %>
+</p>
+
+<%= link_to 'Edit', edit_list_step_path %> |
+<%= link_to 'Back', list_steps_path %> |
+<%= link_to 'New Step', new_list_step_path %>
