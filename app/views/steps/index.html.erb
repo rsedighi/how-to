@@ -18,8 +18,8 @@
         <td><%= step.title %></td>
         <td><%= step.description %></td>
         <td><%= step.list_id %></td>
-        <td><%= link_to 'Show', list_step_path(@list, step) %></td> |
-        <td><%= link_to 'Edit', edit_list_step_path(@list, step) %></td> |
+        <td><%= link_to 'Show', list_step_path(@list, step) %>|</td>
+        <td><%= link_to 'Edit', edit_list_step_path(@list, step) %>|</td>
         <td><%= link_to 'Destroy', [@list, @step], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
