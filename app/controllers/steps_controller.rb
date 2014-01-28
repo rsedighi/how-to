@@ -10,7 +10,6 @@ class StepsController < ApplicationController
   # GET /steps/1
   # GET /steps/1.json
   def show
-    @step = Step.find(params[:id])
     @step = @list.steps.find(params[:id])
   end
 
@@ -25,7 +24,6 @@ class StepsController < ApplicationController
 
   # GET /steps/1/edit
   def edit
-    @step = Step.find(params[:id])
     @step = @list.steps.find(params[:id])
   end
 
